@@ -1,1 +1,15 @@
-".vs/bin/obj/*.user *.suo *.userosscache *.log *.tmp" 
+# Ignore Visual Studio cache folder
+.vs/
+
+# Ignore build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+
+# Logs and temp files
+*.log
+*.tmp
