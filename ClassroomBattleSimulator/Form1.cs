@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 using ClassroomBattleSimulator;
 
@@ -41,6 +42,7 @@ namespace ClassroomBattleSimulator
             buttonStartBattle.Click += ButtonStartBattle_Click;
         }
 
+        
         private void ComboBoxPlayer1_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadAvatarFromResources(pictureBoxAvatar1, comboBoxPlayer1.SelectedItem.ToString());

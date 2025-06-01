@@ -180,6 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar2)).EndInit();
             this.ResumeLayout(false);
 
+
         }
     }
 }

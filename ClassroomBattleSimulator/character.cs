@@ -10,13 +10,13 @@ namespace ClassroomBattleSimulator
         public int Health { get; set; }
         public List<Skill> Skills { get; set; }
 
-        private int defenseTurnsLeft = 0;
+        private int defenseTurnsRemaining = 0;
 
         public Character(string name, int maxHealth, List<Skill> skills)
         {
             Name = name;
             MaxHealth = maxHealth;
-            Health = maxHealth;  // Set initial health to max
+            Health = maxHealth;
             Skills = skills;
         }
 
@@ -27,25 +27,29 @@ namespace ClassroomBattleSimulator
                 Health = MaxHealth;
         }
 
-        public void ReceiveDamage(int damage)
+        public void ReceiveDamage(int amount)
         {
-            if (defenseTurnsLeft > 0)
-                damage = damage / 2; // Reduce damage by half when defense is active
+            int damageToTake = defenseTurnsRemaining > 0 ? amount / 2 : amount;
+            Health -= damageToTake;
 
-            Health -= damage;
             if (Health < 0)
                 Health = 0;
         }
 
         public void ActivateDefense()
         {
-            defenseTurnsLeft = 3; // defense lasts 3 turns
+            defenseTurnsRemaining = 3;
         }
 
         public void DecrementDefense()
         {
-            if (defenseTurnsLeft > 0)
-                defenseTurnsLeft--;
+            if (defenseTurnsRemaining > 0)
+                defenseTurnsRemaining--;
+        }
+
+        public bool IsDefending()
+        {
+            return defenseTurnsRemaining > 0;
         }
     }
 }
