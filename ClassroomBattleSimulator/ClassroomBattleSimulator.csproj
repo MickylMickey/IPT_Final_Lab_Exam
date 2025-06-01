@@ -85,6 +85,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Background.jpg" />
     <Content Include="Resources\The Englisher.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

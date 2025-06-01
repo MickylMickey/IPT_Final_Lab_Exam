@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ClassroomBattleSimulator;
 
 namespace ClassroomBattleSimulator
@@ -57,12 +55,13 @@ namespace ClassroomBattleSimulator
 
         private void LoadAvatarFromResources(PictureBox pictureBox, string characterName)
         {
-            string safeName = characterName.Replace(" ", "_") + ".gif";
-            string avatarPath = Path.Combine(Application.StartupPath, "Resources", safeName);
+            string resourceKey = characterName.Replace(" ", "_");
 
             try
             {
-                if (File.Exists(avatarPath))
+                var image = (Image)Properties.Resources.ResourceManager.GetObject(resourceKey);
+
+                if (image != null)
                 {
                     if (pictureBox.Image != null)
                     {
@@ -71,7 +70,6 @@ namespace ClassroomBattleSimulator
                         pictureBox.Image = null;
                     }
 
-                    var image = Image.FromFile(avatarPath);
                     pictureBox.Image = image;
                     pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -82,7 +80,7 @@ namespace ClassroomBattleSimulator
                 }
                 else
                 {
-                    MessageBox.Show($"GIF not found: {avatarPath}", "Missing Avatar");
+                    MessageBox.Show($"Avatar not found in resources: {resourceKey}", "Missing Avatar");
                     pictureBox.Image = null;
                 }
             }
@@ -313,4 +311,3 @@ namespace ClassroomBattleSimulator
         }
     }
 }
-

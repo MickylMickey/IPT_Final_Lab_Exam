@@ -38,80 +38,80 @@
             this.labelTurn = new System.Windows.Forms.Label();
             this.pictureBoxAvatar1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxAvatar2 = new System.Windows.Forms.PictureBox();
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar2)).BeginInit();
             this.SuspendLayout();
-
+            // 
             // comboBoxPlayer1
+            // 
             this.comboBoxPlayer1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPlayer1.FormattingEnabled = true;
             this.comboBoxPlayer1.Location = new System.Drawing.Point(30, 20);
             this.comboBoxPlayer1.Name = "comboBoxPlayer1";
-            this.comboBoxPlayer1.Size = new System.Drawing.Size(180, 24);
+            this.comboBoxPlayer1.Size = new System.Drawing.Size(180, 21);
             this.comboBoxPlayer1.TabIndex = 0;
-
+            // 
             // comboBoxPlayer2
+            // 
             this.comboBoxPlayer2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPlayer2.FormattingEnabled = true;
             this.comboBoxPlayer2.Location = new System.Drawing.Point(650, 20);
             this.comboBoxPlayer2.Name = "comboBoxPlayer2";
-            this.comboBoxPlayer2.Size = new System.Drawing.Size(180, 24);
+            this.comboBoxPlayer2.Size = new System.Drawing.Size(180, 21);
             this.comboBoxPlayer2.TabIndex = 1;
-
-            // pictureBoxAvatar1
-            this.pictureBoxAvatar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAvatar1.Location = new System.Drawing.Point(30, 60);
-            this.pictureBoxAvatar1.Name = "pictureBoxAvatar1";
-            this.pictureBoxAvatar1.Size = new System.Drawing.Size(180, 200);
-            this.pictureBoxAvatar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAvatar1.TabIndex = 2;
-            this.pictureBoxAvatar1.TabStop = false;
-
-            // pictureBoxAvatar2
-            this.pictureBoxAvatar2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAvatar2.Location = new System.Drawing.Point(650, 60);
-            this.pictureBoxAvatar2.Name = "pictureBoxAvatar2";
-            this.pictureBoxAvatar2.Size = new System.Drawing.Size(180, 200);
-            this.pictureBoxAvatar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAvatar2.TabIndex = 3;
-            this.pictureBoxAvatar2.TabStop = false;
-
-            // progressBarPlayer1
-            this.progressBarPlayer1.Location = new System.Drawing.Point(30, 270);
-            this.progressBarPlayer1.Name = "progressBarPlayer1";
-            this.progressBarPlayer1.Size = new System.Drawing.Size(180, 25);
-            this.progressBarPlayer1.TabIndex = 4;
-
-            // progressBarPlayer2
-            this.progressBarPlayer2.Location = new System.Drawing.Point(650, 270);
-            this.progressBarPlayer2.Name = "progressBarPlayer2";
-            this.progressBarPlayer2.Size = new System.Drawing.Size(180, 25);
-            this.progressBarPlayer2.TabIndex = 5;
-
+            // 
             // panelPlayer1Skills
+            // 
             this.panelPlayer1Skills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPlayer1Skills.Location = new System.Drawing.Point(30, 310);
             this.panelPlayer1Skills.Name = "panelPlayer1Skills";
             this.panelPlayer1Skills.Size = new System.Drawing.Size(180, 150);
             this.panelPlayer1Skills.TabIndex = 6;
-
+            // 
             // panelPlayer2Skills
+            // 
             this.panelPlayer2Skills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPlayer2Skills.Location = new System.Drawing.Point(650, 310);
             this.panelPlayer2Skills.Name = "panelPlayer2Skills";
             this.panelPlayer2Skills.Size = new System.Drawing.Size(180, 150);
             this.panelPlayer2Skills.TabIndex = 7;
-
+            // 
             // buttonStartBattle
+            // 
             this.buttonStartBattle.Location = new System.Drawing.Point(370, 20);
             this.buttonStartBattle.Name = "buttonStartBattle";
             this.buttonStartBattle.Size = new System.Drawing.Size(150, 30);
             this.buttonStartBattle.TabIndex = 8;
             this.buttonStartBattle.Text = "Start Battle";
             this.buttonStartBattle.UseVisualStyleBackColor = true;
-
+            // 
+            // listBoxBattleLog
+            // 
+            this.listBoxBattleLog.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxBattleLog.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.listBoxBattleLog.FormattingEnabled = true;
+            this.listBoxBattleLog.Location = new System.Drawing.Point(230, 208);
+            this.listBoxBattleLog.Name = "listBoxBattleLog";
+            this.listBoxBattleLog.Size = new System.Drawing.Size(400, 186);
+            this.listBoxBattleLog.TabIndex = 10;
+            // 
+            // progressBarPlayer1
+            // 
+            this.progressBarPlayer1.Location = new System.Drawing.Point(30, 270);
+            this.progressBarPlayer1.Name = "progressBarPlayer1";
+            this.progressBarPlayer1.Size = new System.Drawing.Size(180, 25);
+            this.progressBarPlayer1.TabIndex = 4;
+            // 
+            // progressBarPlayer2
+            // 
+            this.progressBarPlayer2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.progressBarPlayer2.Location = new System.Drawing.Point(650, 270);
+            this.progressBarPlayer2.Name = "progressBarPlayer2";
+            this.progressBarPlayer2.Size = new System.Drawing.Size(180, 25);
+            this.progressBarPlayer2.TabIndex = 5;
+            // 
             // labelTurn
+            // 
             this.labelTurn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelTurn.Location = new System.Drawing.Point(370, 60);
             this.labelTurn.Name = "labelTurn";
@@ -119,16 +119,32 @@
             this.labelTurn.TabIndex = 9;
             this.labelTurn.Text = "Turn: ";
             this.labelTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-            // listBoxBattleLog
-            this.listBoxBattleLog.FormattingEnabled = true;
-            this.listBoxBattleLog.ItemHeight = 16;
-            this.listBoxBattleLog.Location = new System.Drawing.Point(240, 100);
-            this.listBoxBattleLog.Name = "listBoxBattleLog";
-            this.listBoxBattleLog.Size = new System.Drawing.Size(400, 360);
-            this.listBoxBattleLog.TabIndex = 10;
-
+            // 
+            // pictureBoxAvatar1
+            // 
+            this.pictureBoxAvatar1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAvatar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxAvatar1.Location = new System.Drawing.Point(30, 60);
+            this.pictureBoxAvatar1.Name = "pictureBoxAvatar1";
+            this.pictureBoxAvatar1.Size = new System.Drawing.Size(180, 200);
+            this.pictureBoxAvatar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAvatar1.TabIndex = 2;
+            this.pictureBoxAvatar1.TabStop = false;
+            // 
+            // pictureBoxAvatar2
+            // 
+            this.pictureBoxAvatar2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAvatar2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxAvatar2.Location = new System.Drawing.Point(650, 60);
+            this.pictureBoxAvatar2.Name = "pictureBoxAvatar2";
+            this.pictureBoxAvatar2.Size = new System.Drawing.Size(180, 200);
+            this.pictureBoxAvatar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAvatar2.TabIndex = 3;
+            this.pictureBoxAvatar2.TabStop = false;
+            // 
             // Form1
+            // 
+            this.BackgroundImage = global::ClassroomBattleSimulator.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(860, 480);
             this.Controls.Add(this.listBoxBattleLog);
             this.Controls.Add(this.labelTurn);
@@ -143,10 +159,10 @@
             this.Controls.Add(this.comboBoxPlayer1);
             this.Name = "Form1";
             this.Text = "Classroom Battle Simulator";
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar2)).EndInit();
             this.ResumeLayout(false);
+
         }
     }
 }
