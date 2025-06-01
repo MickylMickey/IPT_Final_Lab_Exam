@@ -45,24 +45,28 @@
             // comboBoxPlayer1
             // 
             this.comboBoxPlayer1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPlayer1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPlayer1.FormattingEnabled = true;
             this.comboBoxPlayer1.Location = new System.Drawing.Point(30, 20);
             this.comboBoxPlayer1.Name = "comboBoxPlayer1";
-            this.comboBoxPlayer1.Size = new System.Drawing.Size(180, 21);
+            this.comboBoxPlayer1.Size = new System.Drawing.Size(180, 23);
             this.comboBoxPlayer1.TabIndex = 0;
             // 
             // comboBoxPlayer2
             // 
             this.comboBoxPlayer2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPlayer2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPlayer2.FormattingEnabled = true;
             this.comboBoxPlayer2.Location = new System.Drawing.Point(650, 20);
             this.comboBoxPlayer2.Name = "comboBoxPlayer2";
-            this.comboBoxPlayer2.Size = new System.Drawing.Size(180, 21);
+            this.comboBoxPlayer2.Size = new System.Drawing.Size(180, 23);
             this.comboBoxPlayer2.TabIndex = 1;
             // 
             // panelPlayer1Skills
             // 
-            this.panelPlayer1Skills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPlayer1Skills.BackColor = System.Drawing.Color.Transparent;
+            this.panelPlayer1Skills.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelPlayer1Skills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelPlayer1Skills.Location = new System.Drawing.Point(30, 310);
             this.panelPlayer1Skills.Name = "panelPlayer1Skills";
             this.panelPlayer1Skills.Size = new System.Drawing.Size(180, 150);
@@ -70,7 +74,9 @@
             // 
             // panelPlayer2Skills
             // 
-            this.panelPlayer2Skills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPlayer2Skills.BackColor = System.Drawing.Color.Transparent;
+            this.panelPlayer2Skills.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelPlayer2Skills.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelPlayer2Skills.Location = new System.Drawing.Point(650, 310);
             this.panelPlayer2Skills.Name = "panelPlayer2Skills";
             this.panelPlayer2Skills.Size = new System.Drawing.Size(180, 150);
@@ -78,22 +84,29 @@
             // 
             // buttonStartBattle
             // 
-            this.buttonStartBattle.Location = new System.Drawing.Point(370, 20);
+            this.buttonStartBattle.BackColor = System.Drawing.Color.SeaGreen;
+            this.buttonStartBattle.Font = new System.Drawing.Font("Carnivalee Freakshow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStartBattle.ForeColor = System.Drawing.Color.White;
+            this.buttonStartBattle.Location = new System.Drawing.Point(316, 20);
             this.buttonStartBattle.Name = "buttonStartBattle";
-            this.buttonStartBattle.Size = new System.Drawing.Size(150, 30);
+            this.buttonStartBattle.Size = new System.Drawing.Size(241, 57);
             this.buttonStartBattle.TabIndex = 8;
             this.buttonStartBattle.Text = "Start Battle";
-            this.buttonStartBattle.UseVisualStyleBackColor = true;
+            this.buttonStartBattle.UseVisualStyleBackColor = false;
+            this.buttonStartBattle.Click += new System.EventHandler(this.buttonStartBattle_Click_1);
             // 
             // listBoxBattleLog
             // 
             this.listBoxBattleLog.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxBattleLog.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.listBoxBattleLog.Font = new System.Drawing.Font("Courier New", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxBattleLog.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.listBoxBattleLog.FormattingEnabled = true;
-            this.listBoxBattleLog.Location = new System.Drawing.Point(230, 208);
+            this.listBoxBattleLog.ItemHeight = 11;
+            this.listBoxBattleLog.Location = new System.Drawing.Point(233, 142);
             this.listBoxBattleLog.Name = "listBoxBattleLog";
-            this.listBoxBattleLog.Size = new System.Drawing.Size(400, 186);
+            this.listBoxBattleLog.Size = new System.Drawing.Size(400, 312);
             this.listBoxBattleLog.TabIndex = 10;
+            this.listBoxBattleLog.SelectedIndexChanged += new System.EventHandler(this.listBoxBattleLog_SelectedIndexChanged);
             // 
             // progressBarPlayer1
             // 
@@ -112,13 +125,17 @@
             // 
             // labelTurn
             // 
-            this.labelTurn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.labelTurn.Location = new System.Drawing.Point(370, 60);
+            this.labelTurn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelTurn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelTurn.Font = new System.Drawing.Font("Carnivalee Freakshow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTurn.ForeColor = System.Drawing.Color.Transparent;
+            this.labelTurn.Location = new System.Drawing.Point(233, 89);
             this.labelTurn.Name = "labelTurn";
-            this.labelTurn.Size = new System.Drawing.Size(150, 25);
+            this.labelTurn.Size = new System.Drawing.Size(400, 40);
             this.labelTurn.TabIndex = 9;
             this.labelTurn.Text = "Turn: ";
             this.labelTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTurn.Click += new System.EventHandler(this.labelTurn_Click);
             // 
             // pictureBoxAvatar1
             // 

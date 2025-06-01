@@ -309,5 +309,20 @@ namespace ClassroomBattleSimulator
             foreach (Button btn in panelPlayer2Skills.Controls)
                 btn.Enabled = false;
         }
+
+        private void listBoxBattleLog_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonStartBattle_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTurn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
